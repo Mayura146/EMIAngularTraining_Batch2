@@ -1,11 +1,10 @@
-<p>create-employee works!</p>
-<div>
-<label>Employee ID</label> 
-<input type="text" name='id'[(ngModel)]="employee.id">
-<label>Employee name</label> 
-<input type="text" name='id'[(ngModel)]="employee.employeeName">
-<label>ProjectID</label> 
-<input type="text" name='id'[(ngModel)]="employee.projectId">
+<p>Add Employee Details</p>
 
-</div>
-<button type="button" (click)="addEmployee()">Add Data</button>
+<label>Employee Id</label>
+<input type="text" name='id' [(ngModel)]="employee.empid">
+<label>Employee Name</label>
+<input type="text" name='name' [(ngModel)]="employee.name">
+<label>Employee location</label>
+<input type="text" name='location' [(ngModel)]="employee.location">
+
+<button type="button" (click)="AddEmployeeDetails()">Create Employee </button>

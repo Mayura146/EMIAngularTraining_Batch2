@@ -1,7 +1,5 @@
 export class Employee {
-    id:number;
-    employeeName:string;
-    projectId:number;
-    angularProficiency:number;
-
+    empid:number;
+    name:string;
+    location:string;
 }

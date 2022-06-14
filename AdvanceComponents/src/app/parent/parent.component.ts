@@ -6,16 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
+inputvariable='Hi,i am your Parent!!';
 
-  public inputVariable='Hello!! I am your Parent!!!';
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  public getData(value:string):void
+  getdata(value)
   {
     console.log(value);
   }
- 
 }

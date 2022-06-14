@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
@@ -7,18 +7,17 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-@Input() inputMessage:string | undefined;
-@Output() myOutput:EventEmitter<string>=new EventEmitter<string>();
-outputVariable='Hello I know you are my parent!!';
+@Input() inputmessage: string;
+@Output() myoutput: EventEmitter<string> = new EventEmitter<string>();
+outputvariable ='Hi I know your are my Parent!!';
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.inputMessage);
-  }
+  ngOnInit() {
 
-  public sendData():void
-  {
-    this.myOutput.emit(this.outputVariable);
+    console.log(this.inputmessage);
   }
-  
+public senddata()
+{
+  this.myoutput.emit(this.outputvariable);
+}
 }
