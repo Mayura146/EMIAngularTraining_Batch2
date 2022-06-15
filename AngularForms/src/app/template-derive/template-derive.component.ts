@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { NgForm } from "@angular/forms";
 import { User } from "../user";
 
 
@@ -9,11 +10,15 @@ import { User } from "../user";
 })
 export class TemplateDeriveComponent implements OnInit {
   model = new User();
- // userForm: any;
+ //userForm: any;
   constructor() {}
   Skill: string[] = ["Angular", "Csharp", "PHP", "ROR", "SQL Server"];
   ngOnInit() {}
-  onSubmit(userForm) {
-   userForm.reset(userForm);
+  onSubmit(userForm:NgForm) {
+ userForm.reset(userForm);
   }
+  
 }
+// FormBuilder=>
+// FormControl
+//formGroup

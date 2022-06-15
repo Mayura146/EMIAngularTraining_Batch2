@@ -19,7 +19,7 @@ export class ReactiveFormComponent implements OnInit {
   ngOnInit() {
     this.signupForm = this.formbuilder.group(
       {
-        name: ["", [Validators.required, Validators.minLength(3)]],
+        name: ["sss", [Validators.required, Validators.minLength(3)]],
         email: ["", [Validators.required, Validators.email]],
         username: ["", Validators.required],
         password: [
@@ -38,12 +38,12 @@ export class ReactiveFormComponent implements OnInit {
 
     this.signupForm.get("name").valueChanges.subscribe((uname) => {
       console.log(uname);
-    });
-    // this.signupForm.controls["name"].setValue("SSS", { eventEmit: false });
-    this.signupForm.get("name").setValue("", { eventEmit: false });
-    this.signupForm.get("name").statusChanges.subscribe((status) => {
-      console.log("Name Status is ", status);
-    });
+   });
+  //  this.signupForm.controls["name"].setValue("SSS", { eventEmit: false });
+  // this.signupForm.get("name").setValue("", { eventEmit: false });
+  //   this.signupForm.get("name").statusChanges.subscribe((status) => {
+  //     console.log("Name Status is ", status);
+  //  });
   }
 
   onSubmit() {
