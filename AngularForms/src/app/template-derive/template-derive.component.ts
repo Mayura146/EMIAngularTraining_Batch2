@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { User } from "../user";
-import { NgForm } from "@angular/forms";
+
 
 @Component({
   selector: "app-template-derive",
@@ -9,11 +9,11 @@ import { NgForm } from "@angular/forms";
 })
 export class TemplateDeriveComponent implements OnInit {
   model = new User();
-  userForm: any;
+ // userForm: any;
   constructor() {}
   Skill: string[] = ["Angular", "Csharp", "PHP", "ROR", "SQL Server"];
   ngOnInit() {}
-  onSubmit(userForm:NgForm) {
+  onSubmit(userForm) {
    userForm.reset(userForm);
   }
 }
