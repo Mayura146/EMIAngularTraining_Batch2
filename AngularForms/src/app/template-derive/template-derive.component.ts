@@ -13,7 +13,7 @@ export class TemplateDeriveComponent implements OnInit {
   constructor() {}
   Skill: string[] = ["Angular", "Csharp", "PHP", "ROR", "SQL Server"];
   ngOnInit() {}
-  onSubmit(userForm) {
-    this.userForm.reset();
+  onSubmit(userForm:NgForm) {
+   userForm.reset(userForm);
   }
 }
