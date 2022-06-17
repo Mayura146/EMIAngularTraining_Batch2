@@ -6,7 +6,7 @@ import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 })
 export class DesignService {
 empName=new BehaviorSubject('Mayura');
-videoEmit=new ReplaySubject<string>(3,5000);
+videoEmit=new ReplaySubject<string>(4,7000);
 exclusive=new Subject<boolean>();
   constructor() { }
 }
