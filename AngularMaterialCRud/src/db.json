@@ -1,14 +1,6 @@
 {
   "Employee": [
     {
-      "id": 1,
-      "name": "Mayura",
-      "designation": "Trainer",
-      "department": "Soft Eng",
-      "Gender": "Female",
-      "sales": "Achieved"
-    },
-    {
       "id": 3,
       "name": "James",
       "designation": "Escalation Manager",
@@ -53,6 +45,34 @@
       "department": "fdf",
       "Gender": "male",
       "id": 8
+    },
+    {
+      "name": "dsd",
+      "designation": "dfdsftiondsd",
+      "department": "dfdsfds",
+      "Gender": "dsfds",
+      "id": 9
+    },
+    {
+      "name": "fdsfds",
+      "designation": "Efddfds",
+      "department": "dfdsfds",
+      "Gender": "MAle",
+      "id": 10
+    },
+    {
+      "name": "Sam",
+      "designation": "Manager",
+      "department": "HR",
+      "Gender": "Male",
+      "id": 11
+    },
+    {
+      "name": "Aniket",
+      "designation": "SE-1",
+      "department": "Soft Eng",
+      "Gender": "Male",
+      "id": 12
     }
   ]
 }

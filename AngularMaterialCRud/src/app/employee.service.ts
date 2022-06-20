@@ -34,4 +34,12 @@ export class EmployeeService {
     const url=`${apiUrl}/${id}`;
     return this.http.get<Employee>(url).pipe(catchError(this.handleError));
   }
+
+  public addEmployee(emp:any):Observable<Employee>{
+    return this.http.post<Employee>(apiUrl,emp);
+  }
+  public deleteEmployee(id:any):Observable<Employee>{
+    const url=`${apiUrl}/${id}`;
+    return this.http.delete<Employee>(url).pipe(catchError(this.handleError));
+  }
 }
