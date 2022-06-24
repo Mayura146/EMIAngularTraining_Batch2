@@ -1,0 +1,9 @@
+Route Guards
+Custom Pre-load
+
+uses of RouteGuard
+1. CanActivate:
+2.CanDeactivate=>
+3.CanLoad=>
+4.CanActivateChild
+5.Resolve
