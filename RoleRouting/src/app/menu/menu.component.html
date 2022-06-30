@@ -1,0 +1,13 @@
+<mat-toolbar *ngIf="service.isAuthenticated">
+<div>
+    <a mat-button><mat-icon>home</mat-icon></a>
+    <a mat-button></a>
+    <a mat-button></a>
+</div>
+
+<div>
+    <a mat-button><mat-icon class="mr">account_circle</mat-icon></a>
+    <a mat-button (click)="LogOut()"><mat-icon class="mr">logout</mat-icon></a>
+</div>
+
+    </mat-toolbar>  

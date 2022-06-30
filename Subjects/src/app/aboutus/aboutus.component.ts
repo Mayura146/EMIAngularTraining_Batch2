@@ -17,8 +17,8 @@ empName:string | undefined;
   ngOnInit(): void {
   }
 
-  OnChange(empname:any)
-  {
-    this.design.empName.next(empname.value);
-  }
+  // OnChange(empname:any)
+  // {
+  //   this.design.empName.next(empname.value);
+  // }
 }
